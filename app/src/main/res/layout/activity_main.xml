@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/tv_bili"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="仿哔哩哔哩"
+            android:elevation="3dp"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_zhihu"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/tv_zhihu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="仿知乎"
+            android:elevation="3dp"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_bdmap"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_bili"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/tv_bdmap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="仿百度地图"
+            android:elevation="3dp"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_zhihu"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/coordinator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageView
+            android:src="@drawable/hi"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    <RelativeLayout
+            android:id="@+id/design_bottom_sheet_bar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:layout_anchor="@+id/design_bottom_sheet"
+            app:layout_anchorGravity="top"
+            android:layout_gravity="bottom"
+            android:visibility="gone">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/ibt_back"
+                android:background="@null"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginStart="23dp"
+                android:src="@drawable/ic_back_white"
+                android:layout_centerVertical="true"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="点击收起BottomSheet"
+                android:textColor="@color/white"
+                android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+            android:id="@+id/design_bottom_sheet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="100dp"
+            app:behavior_peekHeight="56dp"
+            android:orientation="vertical"
+            app:behavior_hideable="false"
+            app:layout_behavior="@string/bottom_sheet_behavior"
+            android:background="@color/white">
+
+        <TextView
+                android:id="@+id/bottom_sheet_tv"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="搜索到美食结果"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rlv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

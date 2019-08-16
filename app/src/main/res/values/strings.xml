@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">MDCoordinateDemo</string>
+    <string name="large_text">
+        春江潮水连海平，海上明月共潮生。\n\n\n
+        滟滟随波千万里，何处春江无月明！\n\n\n
+        江流宛转绕芳甸，月照花林皆似霰；\n\n\n
+        空里流霜不觉飞，汀上白沙看不见。\n\n\n
+        江天一色无纤尘，皎皎空中孤月轮。\n\n\n
+        江畔何人初见月？江月何年初照人？\n\n\n
+        人生代代无穷已，江月年年望相似。\n\n\n
+        不知江月待何人，但见长江送流水。\n\n\n
+        白云一片去悠悠，青枫浦上不胜愁。\n\n\n
+        谁家今夜扁舟子？何处相思明月楼？\n\n\n
+        可怜楼上月徘徊，应照离人妆镜台。\n\n\n
+        玉户帘中卷不去，捣衣砧上拂还来。\n\n\n
+        此时相望不相闻，愿逐月华流照君。\n\n\n
+        鸿雁长飞光不度，鱼龙潜跃水成文。\n\n\n
+        昨夜闲潭梦落花，可怜春半不还家。\n\n\n
+        江水流春去欲尽，江潭落月复西斜。\n\n\n
+        斜月沉沉藏海雾，碣石潇湘无限路。\n\n\n
+        不知乘月几人归，落月摇情满江树。\n\n\n
+    </string>
+
+    <string name="my_fab_behavior">com.zenchn.mdcoordinatedemo.behavior.MyFabBehavior</string>
+    <string name="my_nav_behavior">com.zenchn.mdcoordinatedemo.behavior.MyBottomBehavior</string>
+</resources>
